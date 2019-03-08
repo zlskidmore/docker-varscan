@@ -7,7 +7,11 @@ ENV version 2.4.2
 # run update
 RUN apt-get update -y && apt-get install -y \
     openjdk-8-jre \
-    wget
+    wget \
+    libnss-sss \
+    curl \
+    vim \
+    less
 
 # download varscan and change permissions
 WORKDIR /usr/local/bin
